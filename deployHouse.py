@@ -6,7 +6,7 @@ import joblib
 import webbrowser
 
 
-pickle_in = open('/Users/taha/Downloads/House30Kasim.pkl', 'rb')
+pickle_in = open('HPrice.pkl', 'rb')
 regressor = joblib.load(pickle_in)
 
 st.title("House Price Prediction")
