@@ -89,6 +89,17 @@ url7 = 'https://www.linkedin.com/in/taha-cakir/'
 if st.button('Taha Çakır  ➡'):
     webbrowser.open_new_tab(url7)
 
+from bokeh.models.widgets import Div
+
+
+if st.button('Taha Çakır  ➡'):
+    js = "window.open('https://www.linkedin.com/in/taha-cakir/')"  # New tab or window
+    js = "window.location.href = 'https://share.streamlit.io/taha-cakir/housepricestreamlit/main/deployHouse.py'"  # Current tab
+    html = '<img src onerror="{}">'.format(js)
+    div = Div(text=html)
+    st.bokeh_chart(div)
+
+
 
 
 
