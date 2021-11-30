@@ -32,7 +32,7 @@ if not st.sidebar.checkbox("Hide", False, key='1'):
     GrLivArea = st.number_input("Living Area(Except Basement) : ", min_value=1, max_value=10000000, value=10, step=1)
     overallQual = st.number_input("Overall Quality: ", step=1,value=10)
     totalQual = st.number_input("Total Quality: ",value=overallQual*GrLivArea*GarageArea)
-    budget = st.number_input("Budget :  ", step=1)
+    budget = st.number_input("Budget :  ")
 
 
 
