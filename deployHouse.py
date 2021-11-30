@@ -92,7 +92,7 @@ if st.button('Taha Çakır  ➡'):
 from bokeh.models.widgets import Div
 
 
-if st.button('Taha Çakır  ➡'):
+if st.button('Taha  ➡'):
     js = "window.open('https://www.linkedin.com/in/taha-cakir/')"  # New tab or window
     js = "window.location.href = 'https://share.streamlit.io/taha-cakir/housepricestreamlit/main/deployHouse.py'"  # Current tab
     html = '<img src onerror="{}">'.format(js)
