@@ -14,7 +14,7 @@ st.title("House Price Prediction")
 # st.set_page_config(layout='wide', page_title="Predict price of House that you always wanted to ! ",
 #                    page_icon="🏠")
 
-title = '<h1 style="Arial, sans-serif; color:#323000; font-size: 53px;text-align: center">Calculate your dream House that you always wanted to! 🏠 </h1>'
+title = '<h1 style="Arial, sans-serif; color:#323000; font-size: 53px;text-align: center">Calculate your dream Houses Price that you always wanted to! 🏠 </h1>'
 st.markdown(title, unsafe_allow_html=True)
 
 select = st.sidebar.selectbox('House Price', ['Predict The Prices'], key='1')
@@ -23,7 +23,7 @@ select = st.sidebar.selectbox('House Price', ['Predict The Prices'], key='1')
 # select = st.sidebar.selectbox('Select Action', ['Check the visualizations'], key='2')
 
 if not st.sidebar.checkbox("Hide", False, key='1'):
-    st.title(' Prediction')
+    st.title(' Calculation')
     name = st.text_input("Name: ")
     msquare = st.number_input("Total Square : ", min_value=1, max_value=100000, value=10, step=1)
     buildingAge = st.number_input("Building Age : ", min_value=1, max_value=100000, value=10, step=1)
