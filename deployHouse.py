@@ -27,11 +27,11 @@ if not st.sidebar.checkbox("Hide", False, key='1'):
     name = st.text_input("Name: ")
     msquare = st.number_input("Total Square : ", min_value=1, max_value=100000, value=10, step=1)
     buildingAge = st.number_input("Building Age : ", min_value=1, max_value=100000, value=10, step=1)
-    lotQual = st.number_input("Lot Quality: ", min_value=1, max_value=10000000, value=10, step=1)
+    lotQual = st.number_input("Lot Quality(Quality of Materials) : ", min_value=1, max_value=10000000, value=10, step=1)
     GarageArea = st.number_input("Garage Area : ", min_value=1, max_value=10000000, value=10, step=1)
     GrLivArea = st.number_input("Living Area(Except Basement) : ", min_value=1, max_value=10000000, value=10, step=1)
-    overallQual = st.number_input("Overall Quality: ", step=1,value=10)
-    totalQual = st.number_input("Total Quality: ",value=overallQual*GrLivArea*GarageArea)
+    overallQual = st.number_input("Overall Quality(Quality of Materials) : ", step=1,value=10)
+    totalQual = st.number_input("Total Quality : ",value=overallQual*GrLivArea*GarageArea)
     budget = st.number_input("Budget :  ")
 
 
